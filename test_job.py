@@ -14,7 +14,7 @@ class TestJob(unittest.TestCase):
 
     def test_instantiation(self):
         """
-        A Job exists.
+        Test 1: A Job exists.
         """
         try:
             Job()
@@ -23,7 +23,7 @@ class TestJob(unittest.TestCase):
 
     # def test_default_attributes(self):
     #     """
-    #     A default Job has a priority and message that are None.
+    #     Test 2: A default Job has a priority and message that are None.
     #     """
     #     j = Job()
     #     self.assertEqual(None, j.priority)
@@ -32,7 +32,7 @@ class TestJob(unittest.TestCase):
 
     # def test_attributes(self):
     #     """
-    #     A Job is instantiated with a priority and a message.
+    #     Test 3: A Job is instantiated with a priority and a message.
     #     """
     #     j = Job(23, "Fake message")
     #     self.assertEqual(23, j.priority)
@@ -45,7 +45,7 @@ class TestJob(unittest.TestCase):
 
     # def test_eq(self):
     #     """
-    #     Jobs with equivalent priorities are equal to each other.
+    #     Test 4: Jobs with equivalent priorities are equal to each other.
     #     """
     #     first = Job(1, "Fake message")
     #     second = Job(1, "Don't care about the message")
@@ -57,7 +57,7 @@ class TestJob(unittest.TestCase):
 
     # def test_lt(self):
     #     """
-    #     A Job with a smaller priority is 'less than' a job with a larger priority.
+    #     Test 5: A Job with a smaller priority is 'less than' a job with a larger priority.
     #     """
     #     smaller = Job(1, "Fake message")
     #     larger = Job(10, "Fake message")
@@ -66,7 +66,7 @@ class TestJob(unittest.TestCase):
 
     # def test_gt(self):
     #     """
-    #     A Job with a larger priority is 'greater than' a job with a smaller priority.
+    #     Test 6: A Job with a larger priority is 'greater than' a job with a smaller priority.
     #     """
     #     larger = Job(10, "Fake message")
     #     smaller = Job(1, "Fake message")
@@ -75,7 +75,7 @@ class TestJob(unittest.TestCase):
 
     # def test_le(self):
     #     """
-    #     A Job with a smaller priority is 'less than or equal to' a job with an
+    #     Test 7: A Job with a smaller priority is 'less than or equal to' a job with an
     #     equal or larger priority.
     #     """
     #     smaller = Job(1, "Fake message")
@@ -88,7 +88,7 @@ class TestJob(unittest.TestCase):
 
     # def test_ge(self):
     #     """
-    #     A Job with a larger priority is 'greater than or equal to' a job with an
+    #     Test 8: A Job with a larger priority is 'greater than or equal to' a job with an
     #     equal or smaller priority.
     #     """
     #     larger = Job(10, "Fake message")
@@ -105,7 +105,7 @@ class TestJob(unittest.TestCase):
 
     # def test_repr(self):
     #     """
-    #     A job displays its priority and message when printed.
+    #     Test 9: A job displays its priority and message when printed.
     #     Hint: Investigate __repr__.
     #     """
     #     j = Job(42, "Fake message one")

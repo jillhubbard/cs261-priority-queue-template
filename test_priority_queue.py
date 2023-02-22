@@ -11,7 +11,7 @@ from job import Job
 class TestPriorityQueue(unittest.TestCase):
 
     """
-    Initialization
+    Test 1: Initialization
     """
 
     def test_instantiation(self):
@@ -25,7 +25,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_internal(self):
     #     """
-    #     A PriorityQueue uses a list to store its data.
+    #     Test 2: A PriorityQueue uses a list to store its data.
     #     """
     #     pq = PriorityQueue()
     #     self.assertEqual(MaxHeap, type(pq.heap))
@@ -36,7 +36,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_enqueue_dequeue_one(self):
     #     """
-    #     Enqueueing a single value is immediately dequeable.
+    #     Test 3: Enqueueing a single value is immediately dequeable.
     #     """
     #     pq = PriorityQueue()
     #     j = Job(5, 'The')
@@ -46,7 +46,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_enqueue_dequeue_two(self):
     #     """
-    #     Dequeuing from a two-element queue returns the one with highest priority.
+    #     Test 4: Dequeuing from a two-element queue returns the one with highest priority.
     #     """
     #     pq = PriorityQueue()
     #     lower_priority = Job(1, 'of')
@@ -61,7 +61,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_enqueue_dequeue_three(self):
     #     """
-    #     Dequeuing from a three-element queue returns the jobs with the highest
+    #     Test 5: Dequeuing from a three-element queue returns the jobs with the highest
     #     priority.
     #     """
     #     pq = PriorityQueue()
@@ -81,14 +81,14 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_empty(self):
     #     """
-    #     A queue is initially empty.
+    #     Test 6: A queue is initially empty.
     #     """
     #     pq = PriorityQueue()
     #     self.assertTrue(pq.is_empty())
 
     # def test_not_empty(self):
     #     """
-    #     A queue with one enqueued value is not empty.
+    #     Test 7: A queue with one enqueued value is not empty.
     #     """
     #     pq = PriorityQueue()
     #     pq.enqueue(Job(1, 'People'))
@@ -96,7 +96,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_empty_after_dequeue(self):
     #     """
-    #     A queue with one enqueued value is empty after dequeuing.
+    #     Test 8: A queue with one enqueued value is empty after dequeuing.
     #     """
     #     pq = PriorityQueue()
     #     pq.enqueue(Job(1, 'was'))
@@ -105,7 +105,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_not_empty_multiple(self):
     #     """
-    #     A queue with two enqueued values is not empty after dequeuing only one.
+    #     Test 9: A queue with two enqueued values is not empty after dequeuing only one.
     #     """
     #     pq = PriorityQueue()
     #     pq.enqueue(Job(1, 'hustling'))
@@ -115,7 +115,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_initial_dequeue(self):
     #     """
-    #     Dequeuing from an empty queue returns None.
+    #     Test 10: Dequeuing from an empty queue returns None.
     #     """
     #     pq = PriorityQueue()
     #     self.assertIsNone(pq.dequeue())
@@ -126,7 +126,7 @@ class TestPriorityQueue(unittest.TestCase):
 
     # def test_enqueue_dequeue_omg(self):
     #     """
-    #     Dequeing from a big priority queue always returns the highest priority
+    #     Test 11: Dequeing from a big priority queue always returns the highest priority
     #     item that was in the queue.
     #     """
     #     pq = PriorityQueue()

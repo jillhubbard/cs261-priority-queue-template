@@ -14,7 +14,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     def test_instantiation(self):
         """
-        A NaivePriorityQueue exists.
+        Test 1: A NaivePriorityQueue exists.
         """
         try:
             NaivePriorityQueue()
@@ -23,14 +23,14 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_internal(self):
     #     """
-    #     A NaivePriorityQueue uses a list to store its data.
+    #     Test 2: A NaivePriorityQueue uses a list to store its data.
     #     """
     #     pq = NaivePriorityQueue()
     #     self.assertEqual(list, type(pq.data))
 
     # def test_enqueue_one_internal(self):
     #     """
-    #     Enqueueing a value adds it to the internal list.
+    #     Test 3: Enqueueing a value adds it to the internal list.
     #     """
     #     pq = NaivePriorityQueue()
     #     j = Job(5, 'The')
@@ -39,7 +39,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_enqueue_two_internal(self):
     #     """
-    #     Enqueueing two values results in the first enqueued value being the first
+    #     Test 4: Enqueueing two values results in the first enqueued value being the first
     #     one in the list, and the second value being the last one in the list.
     #     """
     #     pq = NaivePriorityQueue()
@@ -52,7 +52,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_enqueue_three_internal(self):
     #     """
-    #     Enqueueing three values results in the first enqueued value being the first
+    #     Test 5: Enqueueing three values results in the first enqueued value being the first
     #     one in the list, and the third value being the last one in the list.
     #     """
     #     pq = NaivePriorityQueue()
@@ -68,7 +68,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_one(self):
     #     """
-    #     Dequeuing from a single-element queue returns the single value.
+    #     Test 6: Dequeuing from a single-element queue returns the single value.
     #     """
     #     pq = NaivePriorityQueue()
     #     j = Job(5, 'the')
@@ -77,7 +77,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_one_internal(self):
     #     """
-    #     Dequeuing from a single-element queue removes it from the internal list.
+    #     Test 7: Dequeuing from a single-element queue removes it from the internal list.
     #     """
     #     pq = NaivePriorityQueue()
     #     job = Job(5, 'crown')
@@ -90,7 +90,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_two(self):
     #     """
-    #     Dequeuing from a two-element queue returns the one with highest priority.
+    #     Test 8: Dequeuing from a two-element queue returns the one with highest priority.
     #     """
     #     pq = NaivePriorityQueue()
     #     lower_priority = Job(1, 'of')
@@ -101,7 +101,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_two_internal(self):
     #     """
-    #     Dequeuing from a two-element queue removes the job with the highest
+    #     Test 9: Dequeuing from a two-element queue removes the job with the highest
     #     priority from the list.
     #     """
     #     pq = NaivePriorityQueue()
@@ -115,7 +115,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_three(self):
     #     """
-    #     Dequeuing from a three-element queue returns the jobs with the highest
+    #     Test 10: Dequeuing from a three-element queue returns the jobs with the highest
     #     priority.
     #     """
     #     pq = NaivePriorityQueue()
@@ -131,7 +131,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_three_internal(self):
     #     """
-    #     Dequeuing from a three-element queue removes each dequeued value from
+    #     Test 11: Dequeuing from a three-element queue removes each dequeued value from
     #     the internal list, highest-priority first.
     #     """
     #     pq = NaivePriorityQueue()
@@ -152,14 +152,14 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_empty(self):
     #     """
-    #     A queue is initially empty.
+    #     Test 12: A queue is initially empty.
     #     """
     #     pq = NaivePriorityQueue()
     #     self.assertTrue(pq.is_empty())
 
     # def test_not_empty(self):
     #     """
-    #     A queue with one enqueued value is not empty.
+    #     Test 13: A queue with one enqueued value is not empty.
     #     """
     #     pq = NaivePriorityQueue()
     #     pq.enqueue(Job(1, 'People'))
@@ -167,7 +167,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_empty_after_dequeue(self):
     #     """
-    #     A queue with one enqueued value is empty after dequeuing.
+    #     Test 14: A queue with one enqueued value is empty after dequeuing.
     #     """
     #     pq = NaivePriorityQueue()
     #     pq.enqueue(Job(1, 'was'))
@@ -176,7 +176,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_not_empty_multiple(self):
     #     """
-    #     A queue with two enqueued values is not empty after dequeuing only one.
+    #     Test 15: A queue with two enqueued values is not empty after dequeuing only one.
     #     """
     #     pq = NaivePriorityQueue()
     #     pq.enqueue(Job(1, 'hustling'))
@@ -186,7 +186,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_initial_dequeue(self):
     #     """
-    #     Dequeuing from an empty queue returns None.
+    #     Test 16: Dequeuing from an empty queue returns None.
     #     """
     #     pq = NaivePriorityQueue()
     #     self.assertIsNone(pq.dequeue())
@@ -197,7 +197,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_enqueue_efficiency(self):
     #     """
-    #     Enqueing a value is always O(1).
+    #     Test 17: Enqueing a value is always O(1).
     #     """
     #     time_samples = []
     #     for _ in range(0, 1000):
@@ -224,7 +224,7 @@ class TestNaivePriorityQueue(unittest.TestCase):
 
     # def test_dequeue_efficiency(self):
     #     """
-    #     Dequeuing a value is O(n).
+    #     Test 18: Dequeuing a value is O(n).
     #     """
     #     print("This test will take a while...") # See the comment below.
     #     time_samples = []

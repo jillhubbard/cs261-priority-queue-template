@@ -15,7 +15,7 @@ class TestMaxHeap(unittest.TestCase):
 
     def test_instantiation(self):
         """
-        A MaxHeap exists.
+        Test 1: A MaxHeap exists.
         """
         try:
             MaxHeap()
@@ -28,7 +28,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_internal_data(self):
     #     """
-    #     A MaxHeap uses an array (a dynamic array / Python list) to store its data.
+    #     Test 2: A MaxHeap uses an array (a dynamic array / Python list) to store its data.
     #     """
     #     h = MaxHeap()
     #     self.assertEqual(list, type(h._data))
@@ -40,14 +40,14 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_size_initial(self):
     #     """
-    #     The _size() of a new heap is 0.
+    #     Test 3: The _size() of a new heap is 0.
     #     """
     #     h = MaxHeap()
     #     self.assertEqual(0, h._size())
 
     # def test_size_data(self):
     #     """
-    #     The _size() of a heap is equal to the number of values in its list.
+    #     Test 4: The _size() of a heap is equal to the number of values in its list.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -64,7 +64,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_empty_initial(self):
     #     """
-    #     A new heap is empty.
+    #     Test 5: A new heap is empty.
     #     Hint: _size is a convenient abstraction, and helps avoid repetitive code.
     #     """
     #     h = MaxHeap()
@@ -72,7 +72,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_not_empty(self):
     #     """
-    #     A heap is not empty if there are items in its data list.
+    #     Test 6: A heap is not empty if there are items in its data list.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -82,7 +82,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_empty(self):
     #     """
-    #     A heap with no items in its data list is empty.
+    #     Test 7: A heap with no items in its data list is empty.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -98,7 +98,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_last_index_initial(self):
     #     """
-    #     The 'last index' of an empty heap happens to be -1.
+    #     Test 8: The 'last index' of an empty heap happens to be -1.
     #     Hint: Easy to calculate if you know its size.
     #     """
     #     h = MaxHeap()
@@ -106,7 +106,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_last_index_one(self):
     #     """
-    #     The last index of a heap with one element is 0.
+    #     Test 9: The last index of a heap with one element is 0.
     #     Hint: Easy, if you know how to determine the last index of a list.
     #     """
     #     h = MaxHeap()
@@ -115,7 +115,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_last_index_two(self):
     #     """
-    #     The last index of a heap with two elements is 1.
+    #     Test 10: The last index of a heap with two elements is 1.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -124,7 +124,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_last_index_42(self):
     #     """
-    #     The last index of a heap with forty-two elements is 41.
+    #     Test 11: The last index of a heap with forty-two elements is 41.
     #     """
     #     h = MaxHeap()
     #     for _ in range(42):
@@ -138,7 +138,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_value_at_zero(self):
     #     """
-    #     The value at index 0 is the value of the 0th item in the heap's data list.
+    #     Test 12: The value at index 0 is the value of the 0th item in the heap's data list.
     #     """
     #     h = MaxHeap()
     #     value = fake_value()
@@ -147,7 +147,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_value_at(self):
     #     """
-    #     The value at index i is the value of the i'th item in the heap's data list.
+    #     Test 13: The value at index i is the value of the i'th item in the heap's data list.
     #     """
     #     h = MaxHeap()
     #     value = fake_value()
@@ -163,7 +163,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_value_at_invalid_index(self):
     #     """
-    #     _value_at raises an IndexError when the index is out of bounds.
+    #     Test 14: _value_at raises an IndexError when the index is out of bounds.
     #     """
     #     h = MaxHeap()
     #     self.assertRaises(IndexError, h._value_at, 0)
@@ -183,7 +183,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_left_child_index(self):
     #     """
-    #     An element at index i has a left child at index ____.
+    #     Test 15: An element at index i has a left child at index ____.
     #     Hint: Know how the heap works. Look up and study the concept.
     #     """
     #     h = MaxHeap()
@@ -196,7 +196,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_right_child_index(self):
     #     """
-    #     An element at index i has a right child at index ____.
+    #     Test 16: An element at index i has a right child at index ____.
     #     Hint: Know how the heap works. Look up and study the concept.
     #     """
     #     h = MaxHeap()
@@ -209,7 +209,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_parent_index(self):
     #     """
-    #     An element at index i has a parent at index ___.
+    #     Test 17: An element at index i has a parent at index ___.
     #     Hints: Work this out instead of looking it up. Draw it.
     #            And, use integer division for natural flooring.
     #            Watch your order of operations.
@@ -238,7 +238,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_parent(self):
     #     """
-    #     Given an index i, the parent is the value at the 'parent index' of i.
+    #     Test 18: Given an index i, the parent is the value at the 'parent index' of i.
     #     Hint: The phrase above is nearly identical to the code, if you use your
     #           abstractions.
     #     """
@@ -260,7 +260,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_parent_invalid(self):
     #     """
-    #     Retrieving the parent value for an index without a parent is invalid.
+    #     Test 19: Retrieving the parent value for an index without a parent is invalid.
     #     """
     #     h = MaxHeap()
     #     self.assertRaises(IndexError, h._parent, 0)
@@ -296,7 +296,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_left_child(self):
     #     """
-    #     Given an index i, the left child is the value at the 'left child index'
+    #     Test 20: Given an index i, the left child is the value at the 'left child index'
     #     of i.
     #     Hint: The phrase above is nearly identical to the code, if you use your
     #           abstractions.
@@ -320,7 +320,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_right_child_none(self):
     #     """
-    #     If the 'right child index' of an element at index i exceeds the bounds of
+    #     Test 21: If the 'right child index' of an element at index i exceeds the bounds of
     #     the data list, just return None.
     #     Hint: Draw both a 5-element array and tree. What is the value of the right
     #           child of the third (index 2) element? And the fourth? And the fifth?
@@ -338,7 +338,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_right_child(self):
     #     """
-    #     Given an index i, the right child is the value at the 'right child index'
+    #     Test 22: Given an index i, the right child is the value at the 'right child index'
     #     of i.
     #     Hint: The phrase above is nearly identical to the code, if you use your
     #           abstractions.
@@ -366,7 +366,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_has_left_child(self):
     #     """
-    #     True when an element's left child isn't None. Otherwise False.
+    #     Test 23: True when an element's left child isn't None. Otherwise False.
     #     """
     #     h = MaxHeap()
     #     fake_root = fake_value()
@@ -387,7 +387,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_has_right_child(self):
     #     """
-    #     True when an element's right child isn't None. Otherwise False.
+    #     Test 24: True when an element's right child isn't None. Otherwise False.
     #     """
     #     h = MaxHeap()
     #     fake_root = fake_value()
@@ -416,7 +416,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_greater_child_index_one(self):
     #     """
-    #     The 'greater child index' of an element without children is None.
+    #     Test 25: The 'greater child index' of an element without children is None.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -424,7 +424,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_greater_child_index_left_only(self):
     #     """
-    #     The 'greater child index' of an element with just a left child (no right
+    #     Test 26: The 'greater child index' of an element with just a left child (no right
     #     child) returns the index of that left child.
     #     """
     #     h = MaxHeap()
@@ -434,7 +434,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_greater_child_index_left(self):
     #     """
-    #     The 'greater child index' of an element with a left and right child, is
+    #     Test 27: The 'greater child index' of an element with a left and right child, is
     #     the index of the left child when it has a value greater than or equal to
     #     the right child.
     #     """
@@ -446,7 +446,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_greater_child_index_right(self):
     #     """
-    #     The 'greater child index' of an element with a left and right child, is
+    #     Test 28: The 'greater child index' of an element with a left and right child, is
     #     the index of the right child when it has a larger value than the left child.
     #     Hint: Refine your logic. What are the possible states? No children, a
     #           left but no right, or a left and a right.
@@ -470,7 +470,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_heap_property_one(self):
     #     """
-    #     A heap with one element obeys the max-heap property.
+    #     Test 29: A heap with one element obeys the max-heap property.
     #     """
     #     h = MaxHeap()
     #     h._data.append('fake')
@@ -478,7 +478,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_heap_property_two_violate(self):
     #     """
-    #     A heap with two elements, with a parent value less than its left child's
+    #     Test 30: A heap with two elements, with a parent value less than its left child's
     #     value violates the max-heap property.
     #     """
     #     h = MaxHeap()
@@ -491,7 +491,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_heap_property_two_obey(self):
     #     """
-    #     A heap with two elements, with a parent value greater than its left
+    #     Test 31: A heap with two elements, with a parent value greater than its left
     #     child's value obeys the max-heap property.
     #     """
     #     h = MaxHeap()
@@ -502,7 +502,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_heap_property_three_violate(self):
     #     """
-    #     A heap with three elements, with a parent value less than its right
+    #     Test 32: A heap with three elements, with a parent value less than its right
     #     child's value or its left child's value violates the max-heap property.
     #     Hint: Refine your logic. What are the possible states? No children,
     #     a left child, or both a left and right child.
@@ -524,7 +524,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_heap_property_three_obey(self):
     #     """
-    #     A heap with three elements, with a parent value greater than its left
+    #     Test 33: A heap with three elements, with a parent value greater than its left
     #     child's value and its right child's value obeys the max-heap property.
     #     Hint: Refine your logic. What are the possible states? No children,
     #     a left child, or both a left and right child.
@@ -552,7 +552,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_swap(self):
     #     """
-    #     Given an index a and an index b, swapping a with b moves b's value to a
+    #     Test 34: Given an index a and an index b, swapping a with b moves b's value to a
     #     and a's value to b.
     #     Hint: A classic algorithm. Three lines.
     #     """
@@ -586,7 +586,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_one(self):
     #     """
-    #     Sifting down the root of a single-element heap is easy.
+    #     Test 35: Sifting down the root of a single-element heap is easy.
     #     Hint: Be naive for now.
     #     """
     #     h = MaxHeap()
@@ -596,7 +596,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_two_stable(self):
     #     """
-    #     Sifting down an element in a two-element heap, when the element is larger
+    #     Test 36: Sifting down an element in a two-element heap, when the element is larger
     #     than its child, is easy.
     #     Hint: Be naive for now.
     #     """
@@ -614,7 +614,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_three_stable(self):
     #     """
-    #     Sifting down an element in a three-element heap, when the element is larger
+    #     Test 37: Sifting down an element in a three-element heap, when the element is larger
     #     than its children, is easy.
     #     Hint: Be naive for now.
     #     """
@@ -640,7 +640,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_two_unstable(self):
     #     """
-    #     Sifting down an element in a two-element heap, when the element is smaller
+    #     Test 38: Sifting down an element in a two-element heap, when the element is smaller
     #     than its child swaps the element with its child.
     #     Hint: A little more genuine now. Use your abstractions!
     #     Hint 2: If it obeys the heap property at that index, there's no work to do.
@@ -655,7 +655,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_three_unstable_left(self):
     #     """
-    #     Sifting down an element in a three-element heap, swaps it with the larger
+    #     Test 39: Sifting down an element in a three-element heap, swaps it with the larger
     #     of its two children.
     #     """
     #     h = MaxHeap()
@@ -670,7 +670,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_three_unstable_right(self):
     #     """
-    #     Sifting down an element in a three-element heap, swaps it with the larger
+    #     Test 40: Sifting down an element in a three-element heap, swaps it with the larger
     #     of its two children.
     #     Hint: Review your handy helper methods. And use them.
     #     """
@@ -689,7 +689,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down_left(self):
     #     """
-    #     Sifting down an element swaps it with the larger of its two children,
+    #     STest 41: ifting down an element swaps it with the larger of its two children,
     #     and continues to sift down that element in its new position and its new
     #     children, until it is in a position where it obeys the heap property.
     #     Hint: This might only require one more line of code, if expressed recursively.
@@ -715,7 +715,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_down(self):
     #     """
-    #     Sifting down an element swaps it with the larger of its two children,
+    #     Test 42: Sifting down an element swaps it with the larger of its two children,
     #     and continues to sift down that element in its new position and its new
     #     children, until it is in a position where it obeys the heap property.
     #     Hint: This might only require one more line of code, if expressed recursively.
@@ -752,7 +752,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_one(self):
     #     """
-    #     Sifting up the root is easy.
+    #     Test 43: Sifting up the root is easy.
     #     Hint: Be naive for now.
     #     """
     #     h = MaxHeap()
@@ -762,7 +762,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_two_stable(self):
     #     """
-    #     Sifting up an element in a two-element heap, when the element is smaller
+    #     Test 44: Sifting up an element in a two-element heap, when the element is smaller
     #     than its parent, is easy.
     #     Hint: Be naive for now.
     #     """
@@ -780,7 +780,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_three_stable(self):
     #     """
-    #     Sifting up an element in a three-element heap, when the element is smaller
+    #     Test 45: Sifting up an element in a three-element heap, when the element is smaller
     #     than its parent, is easy.
     #     Hint: Be naive for now.
     #     """
@@ -806,7 +806,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_two_unstable(self):
     #     """
-    #     Sifting up an element in a two-element heap, when the element is larger
+    #     Test 46: Sifting up an element in a two-element heap, when the element is larger
     #     than its parent swaps the element with its parent.
     #     Hint: A little more genuine now. Refine your logic. Use your abstractions.
     #     """
@@ -820,7 +820,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_three_unstable_left(self):
     #     """
-    #     Sifting up an element in a three-element heap, when the element is
+    #     Test 47: Sifting up an element in a three-element heap, when the element is
     #     larger than its parent, swaps it with its parent.
     #     """
     #     h = MaxHeap()
@@ -835,7 +835,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_three_unstable_right(self):
     #     """
-    #     Sifting up an element in a three-element heap, when the leaf is
+    #     Test 48: Sifting up an element in a three-element heap, when the leaf is
     #     greater than its parent, swaps it with its parent.
     #     Hint: Refine your logic.
     #     """
@@ -854,7 +854,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up_to_root(self):
     #     """
-    #     Sifting up an element swaps it with its parent when appropriate, and
+    #     Test 49: Sifting up an element swaps it with its parent when appropriate, and
     #     continues to sift up that element from its new position, until it either
     #     becomes the root or its parent's value is larger than its value.
     #     Hint: Think of the stopping condition first.
@@ -886,7 +886,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_sift_up(self):
     #     """
-    #     Sifting up an element swaps it with its parent when appropriate, and
+    #     Test 50: Sifting up an element swaps it with its parent when appropriate, and
     #     continues to sift up that element from its new position, until it either
     #     becomes the root or its parent's value is larger than its value.
     #     """
@@ -926,7 +926,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_empty(self):
     #     """
-    #     An empty MaxHeap stores a new value as the root. No algorithms necessary.
+    #     Test 51: An empty MaxHeap stores a new value as the root. No algorithms necessary.
     #     """
     #     h = MaxHeap()
     #     h.insert(10)
@@ -934,7 +934,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_smaller_one(self):
     #     """
-    #     An inserted value that is smaller than the root becomes the left child.
+    #     Test 52: An inserted value that is smaller than the root becomes the left child.
     #     """
     #     h = MaxHeap()
     #     h.insert(10)
@@ -944,7 +944,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_larger_one(self):
     #     """
-    #     An inserted value that is larger than the root becomes the root, and the
+    #     Test 53: An inserted value that is larger than the root becomes the root, and the
     #     root becomes the left child.
     #     """
     #     h = MaxHeap()
@@ -955,7 +955,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_smaller_two(self):
     #     """
-    #     An inserted value that is smaller than the root of a two-element MaxHeap
+    #     Test 54: An inserted value that is smaller than the root of a two-element MaxHeap
     #     becomes the right child.
     #       10           10
     #      /      =>    /  \
@@ -971,7 +971,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_larger_two(self):
     #     """
-    #     An inserted value that is larger than the root becomes the new root, and
+    #     Test 55: An inserted value that is larger than the root becomes the new root, and
     #     the old root becomes the last element in the tree.
     #       10           15
     #      /      =>    /  \
@@ -989,7 +989,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_stable(self):
     #     """
-    #     An inserted value that is smaller than its parent will remain in the new
+    #     Test 56: An inserted value that is smaller than its parent will remain in the new
     #     leaf position.
     #       10            10
     #      /  \   =>    /    \
@@ -1015,7 +1015,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_unstable_three(self):
     #     """
-    #     An inserted value that is larger than its parent should sift up until
+    #     Test 57: An inserted value that is larger than its parent should sift up until
     #     the heap property is obeyed.
     #       10            10
     #      /  \   =>    /    \
@@ -1035,7 +1035,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_unstable_root_three(self):
     #     """
-    #     An inserted value that is larger than its parent should sift up until
+    #     Test 58: An inserted value that is larger than its parent should sift up until
     #     the heap property is obeyed.
     #       10            15
     #      /  \   =>    /    \
@@ -1055,7 +1055,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_unstable_four(self):
     #     """
-    #     An inserted value that is larger than its parent should sift up until
+    #     Test 59: An inserted value that is larger than its parent should sift up until
     #     the heap property is obeyed.
     #         10              10
     #        /  \   =>      /    \
@@ -1077,7 +1077,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_unstable_root_five(self):
     #     """
-    #     An inserted value that is larger than its parent should sift up until
+    #     Test 60: An inserted value that is larger than its parent should sift up until
     #     the heap property is obeyed.
     #          10              15
     #        /    \   =>     /    \
@@ -1101,7 +1101,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_unstable_six(self):
     #     """
-    #     An inserted value that is larger than its parent should sift up until
+    #     Test 61: An inserted value that is larger than its parent should sift up until
     #     the heap property is obeyed.
     #          10               10
     #        /    \   =>      /    \
@@ -1127,7 +1127,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_insert_omg(self):
     #     """
-    #     Lots of inserts should result in the MaxHeap obeying the max-heap
+    #     Test 62: Lots of inserts should result in the MaxHeap obeying the max-heap
     #     property at every node in the tree.
     #     """
     #     h = MaxHeap()
@@ -1152,14 +1152,14 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_empty(self):
     #     """
-    #     Deleting from an empty MaxHeap returns None.
+    #     Test 63: Deleting from an empty MaxHeap returns None.
     #     """
     #     h = MaxHeap()
     #     self.assertIsNone(h.delete())
 
     # def test_delete_one(self):
     #     """
-    #     Deleting when there is only one element removes that element
+    #     Test 64: Deleting when there is only one element removes that element
     #     and returns it.
     #     """
     #     h = MaxHeap()
@@ -1169,7 +1169,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_two(self):
     #     """
-    #     Deleting when there are two elements in the heap removes the root element
+    #     Test 65: Deleting when there are two elements in the heap removes the root element
     #     and returns it, leaving the other element in its place as the new root.
     #     Hint: There's a version of the pop method that takes an argument.
     #     """
@@ -1183,7 +1183,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_left_three(self):
     #     """
-    #     Deleting when there are three elements in the heap removes the root element
+    #     Test 66: Deleting when there are three elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #       10            5
     #      /  \    =>    /
@@ -1200,7 +1200,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_right_three(self):
     #     """
-    #     Deleting when there are three elements in the heap removes the root element
+    #     Test 67: Deleting when there are three elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #       10            5
     #      /  \    =>    /
@@ -1218,7 +1218,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_left_four(self):
     #     """
-    #     Deleting when there are four elements in the heap removes the root element
+    #     Test 68: Deleting when there are four elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #         10            8
     #        /  \    =>    /  \
@@ -1239,7 +1239,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_right_four(self):
     #     """
-    #     Deleting when there are four elements in the heap removes the root element
+    #     Test 69: Deleting when there are four elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #         10            8
     #        /  \    =>    /  \
@@ -1260,7 +1260,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_left_five(self):
     #     """
-    #     Deleting when there are five elements in the heap removes the root element
+    #     Test 70: Deleting when there are five elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #     The leaf that was made the new root sifts down only as far as it needs to,
     #     to obey the heap property.
@@ -1285,7 +1285,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_larger_left_five_root(self):
     #     """
-    #     Deleting when there are five elements in the heap removes the root element
+    #     Test 71: Deleting when there are five elements in the heap removes the root element
     #     and returns it, leaving the larger of the two children as the new root.
     #     The leaf that was made the new root sifts down as far as it needs to,
     #     to obey the heap property.
@@ -1310,7 +1310,7 @@ class TestMaxHeap(unittest.TestCase):
 
     # def test_delete_omg(self):
     #     """
-    #     Lots of deletions should result in the MaxHeap obeying the max-heap
+    #     Test 72: Lots of deletions should result in the MaxHeap obeying the max-heap
     #     property at every node in the tree, and the root always being the largest
     #     value in the tree.
     #     """
